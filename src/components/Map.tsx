@@ -36,7 +36,7 @@ export default function Map({ setMap }: MapProps) {
         src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_MAP_CLIENT}&autoload=false`}
         onReady={loadKakaoMap}
       />
-      <div id="map" className="w-full h-screen"></div>
+      <div id="map" className="w-full h-screen top-[52px]"></div>
     </>
   );
 }
