@@ -17,6 +17,9 @@ export default function Navbar() {
           nextmap
         </Link>
         <div className="navbar__list">
+          <Link href="/" className="navbar__list--item">
+            맛집 지도
+          </Link>
           <Link href="/stores" className="navbar__list--item">
             맛집 목록
           </Link>
