@@ -7,10 +7,12 @@ import { CommentApiResponse } from "@/interface";
 import axios from "axios";
 import { useSession, signOut } from "next-auth/react";
 import { useQuery } from "react-query";
+import { useSearchParams } from "next/navigation";
 
-export default function Mypage({ searchParams}: { searchParams: {page: string}}) {
+export default function Mypage() {
   
-  const page = searchParams?.page || "1";
+  const searchParams = useSearchParams();
+  const page = searchParams?.get("page") || "1";
 
   const fetchComments = async () => {
     const { data } = await axios(
