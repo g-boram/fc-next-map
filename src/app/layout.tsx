@@ -4,12 +4,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Fastcampus NextMap",
-  description: "next.js 13을 이용한 맛집 앱"
+  description: "Next.js 13을 이용한 맛집 앱",
 };
 
-export default function RootLayout({ 
-  children, 
-}: { 
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
 }) {
   return (
@@ -20,5 +20,5 @@ export default function RootLayout({
         </NextProvider>
       </body>
     </html>
-  )
+  );
 }
